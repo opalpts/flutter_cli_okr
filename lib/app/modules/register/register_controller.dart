@@ -2,8 +2,6 @@ import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 
 class RegisterController extends GetxController {
-  //TODO: Implement RegisterController
-
   var moblie = TextEditingController();
   var firstname = TextEditingController();
   var lastname = TextEditingController();

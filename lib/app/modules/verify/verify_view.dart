@@ -5,9 +5,10 @@ import 'package:get/get.dart';
 import 'verify_controller.dart';
 
 import '../../../body_widget.dart';
+
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
+
 import 'dart:developer';
-import 'dart:convert';
 
 class VerifyView extends GetView<VerifyController> {
   const VerifyView({Key? key}) : super(key: key);

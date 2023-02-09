@@ -5,8 +5,6 @@ import 'package:get/get.dart';
 import 'otp_controller.dart';
 
 import '../../../body_widget.dart';
-import 'dart:developer';
-import 'dart:convert';
 
 class OtpView extends GetView<OtpController> {
   const OtpView({Key? key}) : super(key: key);
@@ -83,33 +81,6 @@ class OtpView extends GetView<OtpController> {
                 onPressed: controller.isActive.value
                     ? () async {
                         controller.sendOtp(controller.moblie.text);
-                        // final data = jsonDecode(resp);
-                        // if (resp.statusCode == 200) {
-                        //   log('200');
-                        //   // Navigator.push(
-                        //   //   context,
-                        //   //   MaterialPageRoute(
-                        //   //     builder: (context) => Otp(
-                        //   //         transactionId: data['data']['resp']
-                        //   //             ['transaction_id'],
-                        //   //         otpReference: data['data']['resp']
-                        //   //             ['otp_reference'],
-                        //   //         expireTime: data['data']['resp']
-                        //   //             ['expire_time'],
-                        //   //         mobile: controller.moblie.text),
-                        //   //   ),
-                        //   // );
-                        // } else {
-                        //   log('400');
-                        //   // showDialog(
-                        //   //     context: context,
-                        //   //     builder: (context) {
-                        //   //       return const AlertDialog(
-                        //   //         title: Text("error!!"),
-                        //   //         content: Text("error!!"),
-                        //   //       );
-                        //   //     });
-                        // }
                       }
                     : null,
                 child: const Text('ยืนยัน'),
