@@ -3,7 +3,6 @@ part of 'app_pages.dart';
 
 abstract class Routes {
   Routes._();
-  static const HOME = _Paths.HOME;
   static const CONSENT = _Paths.CONSENT;
   static const OTP = _Paths.OTP;
   static const REGISTER = _Paths.REGISTER;
@@ -12,7 +11,6 @@ abstract class Routes {
 
 abstract class _Paths {
   _Paths._();
-  static const HOME = '/home';
   static const CONSENT = '/consent';
   static const OTP = '/otp';
   static const REGISTER = '/register';

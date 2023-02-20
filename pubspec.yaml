@@ -26,3 +26,6 @@ flutter:
 
   assets:
     - assets/image/
+
+get_cli:
+  sub_folder: false
